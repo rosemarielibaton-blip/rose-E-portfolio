@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Field Study 1 and 2 E-Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f6f1e3;--ink:#1f2d24;--mute:#5d6b60;--card:#fffdf6;--line:#ddd5be;--teal:#2f5d46;--soft:#e8eedf;--onteal:#f6f1e3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14221a;--ink:#f1ead7;--mute:#b2b9a6;--card:#1b2e22;--line:#34493a;--teal:#8fc4a1;--soft:#223a2b;--onteal:#14221a}}
+:root[data-theme="dark"]{--bg:#14221a;--ink:#f1ead7;--mute:#b2b9a6;--card:#1b2e22;--line:#34493a;--teal:#8fc4a1;--soft:#223a2b;--onteal:#14221a}
+html{color-scheme:light dark;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Figtree,system-ui,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px 60px}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;line-height:1.15;margin:0}
+header{display:contents}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1{font-size:clamp(2.1rem,5.5vw,3.2rem);font-weight:700;letter-spacing:-.01em;max-width:18ch}
+header p{color:var(--mute);max-width:58ch;margin:14px 0 0}
+.tag{display:block;color:var(--teal);font-weight:600;font-size:.95rem;margin:56px 0 14px}
+.pt{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line)}
+.pt button.act{background:var(--teal);color:var(--onteal)}
+section{display:none}section.on{display:block}
+.pager{display:flex;justify-content:space-between;gap:10px;margin-top:22px}
+.pager .add{margin-top:0}
+.pt button{all:unset;cursor:pointer;background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:6px 16px;font-size:.92rem;font-weight:500}
+.pt button:hover,.pt button:focus-visible{background:var(--teal);color:var(--onteal);outline:2px solid var(--teal);outline-offset:2px}
+.hint{font-size:.9rem;color:var(--mute);margin:10px 0 0}
+section{margin-top:32px;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:26px 28px}
+section>h2{font-size:1.6rem;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--teal)}
+h3{font-size:1.1rem;margin:20px 0 6px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f{border-left:3px solid var(--teal);padding:2px 0 2px 12px;margin:10px 0}
+.f small{display:block;color:var(--mute);font-weight:600;font-size:.85rem}
+.e{min-height:1.4em}
+.ph{border:2px dashed var(--line);border-radius:8px;min-height:130px;display:grid;place-items:center;text-align:center;color:var(--mute);font-size:.88rem;background-size:cover;background-position:center;padding:10px}
+.ph.has{border-style:solid;color:transparent}
+.avatar{min-height:190px}
+details{border:1.5px solid var(--line);border-radius:8px;margin:10px 0;background:var(--bg)}
+summary{cursor:pointer;padding:12px 16px;font:700 1.05rem 'Source Serif 4',Georgia,serif}
+details>div{padding:0 16px 16px}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{border:1.5px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.tblw{overflow-x:auto}
+ul.chk{padding-left:20px;margin:6px 0}
+button.add{font:600 .95rem Figtree,sans-serif;background:var(--teal);color:var(--onteal);border:0;border-radius:6px;padding:9px 16px;cursor:pointer;margin-top:6px}
+button.add:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.top{display:inline-block;margin-top:14px;font-size:.88rem;color:var(--teal);cursor:pointer;background:none;border:0;padding:0;font-weight:600}
+.rub{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.rub span{background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:3px 12px;font-size:.85rem}
+footer{margin-top:40px;color:var(--mute);font-size:.88rem}
+@media(max-width:640px){.pt{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}section{padding:20px 16px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+<header>
+<span class="tag">Taguig City University, College of Innovative Learning and Teaching</span>
+<h1>Field Study 1 and 2 E-Portfolio</h1>
+<p>A record of my teaching internship at Taguig National High School: what I observed, what I taught, and what I learned.</p>
+<div class="pt" id="nav"></div>
+</header>
+
+<section id="s1"><h2>1. Introduction</h2>
+<h3>About this portfolio</h3>
+<p class="e">This portfolio records my teaching internship at Taguig National High School, where I handle Grade 9 and Grade 7 students. Grade 7 learners are still adjusting to high school and need patience and clear routines. Grade 9 learners are more independent and ready for deeper discussion. Teaching both groups taught me to read the room and adjust my approach.</p>
+<h3>Preface</h3>
+<p class="e">This e-portfolio shows my work, my honest reflections, and my growth as a future teacher. Each section records the plans I tried, what I observed, and the conclusions I drew. I thank my cooperating teacher, my adviser, my school, my family, and my students, who taught me as much as I taught them.</p>
+</section>
+
+<section id="s2"><h2>2. Student Profile</h2>
+<div class="g2">
+<div><div class="ph avatar" data-ph>Professional photo</div></div>
+<div>
+<div class="f"><small>Full name</small><div class="e">[Your full name]</div></div>
+<div class="f"><small>Student number</small><div class="e">[Student number]</div></div>
+<div class="f"><small>Program and major</small><div class="e">[Program and major]</div></div>
+<div class="f"><small>Academic year</small><div class="e">[A.Y. 2026–2027]</div></div>
+<div class="f"><small>Course code and title</small><div class="e">[Course code and title]</div></div>
+<div class="f"><small>Field study adviser</small><div class="e">[Adviser’s name]</div></div>
+</div></div>
+<div class="g2">
+<div class="f"><small>Cooperating school</small><div>Taguig National High School</div></div>
+<div class="f"><small>Cooperating teacher</small><div class="e">[Cooperating teacher’s name]</div></div>
+</div>
+<h3>Brief biography</h3><p class="e">[Write 3–5 sentences about who you are, where you come from, and why you chose teaching.]</p>
+<h3>Personal educational philosophy</h3><p class="e">[What do you believe about how students learn? What kind of teacher do you want to be?]</p>
+<h3>Career objectives</h3><p class="e">[Short-term and long-term goals as a teacher.]</p>
+<h3>Curriculum vitae</h3><p class="e">[Paste the link to your CV (PDF) here.]</p>
+</section>
+
+<section id="s3"><h2>3. Learning Goals</h2>
+<div class="g2">
+<div><h3>Field Study 1: Observation</h3><p class="e">[What do you expect to learn from observing classes? List 2–3 goals and expectations.]</p></div>
+<div><h3>Field Study 2: Participation</h3><p class="e">[What do you expect to learn from assisting and teaching? List 2–3 goals and expectations.]</p></div>
+</div></section>
+
+<section id="s4"><h2>4. Cooperating School Profile</h2>
+<div class="f"><small>School profile</small><div class="e">Taguig National High School. [Add location, year founded, number of students, and other details.]</div></div>
+<div class="f"><small>Vision</small><div class="e">[Copy the school’s vision.]</div></div>
+<div class="f"><small>Mission</small><div class="e">[Copy the school’s mission.]</div></div>
+<div class="f"><small>Core values</small><div class="e">[List the school’s core values.]</div></div>
+</section>
+
+<section id="s5"><h2>5. Weekly Documentation and Reflection</h2>
+<p class="e">One entry per week. Open an entry to read it.</p>
+<div id="weeks"></div>
+</section>
+
+<section id="s6"><h2>6. Professional Development and Activities</h2>
+<h3>Activity log</h3>
+<p class="e">Seminars, webinars, workshops, lecture series, conferences, mock board exams, assemblies, extension programs, and other events.</p>
+<div id="acts"></div>
+<h3>Organizational structure</h3><div class="ph" data-ph>Organizational chart</div>
+<h3>School facilities</h3><div class="g2"><div class="ph" data-ph>Photo</div><div class="ph" data-ph>Photo</div></div>
+</section>
+
+<section id="s7"><h2>7. Professional Growth Action Plan</h2>
+<div class="tblw"><table>
+<tr><th>Area for improvement</th><th>Action plan</th><th>Timeline</th><th>Expected outcome</th></tr>
+<tr><td class="e">[e.g. classroom management]</td><td class="e">[Steps you will take]</td><td class="e">[When]</td><td class="e">[Result you aim for]</td></tr>
+<tr><td class="e">[Second area]</td><td class="e">[Steps]</td><td class="e">[When]</td><td class="e">[Result]</td></tr>
+</table></div></section>
+
+<section id="s8"><h2>8. Appendices</h2>
+<ul class="chk">
+<li>Reflection</li><li>Photo documentation</li><li>Certificates and recognitions</li>
+<li>Observation forms</li><li>Attendance records</li><li>School forms (if permitted)</li>
+<li>Endorsement or acceptance letter (if applicable)</li><li>Approved class or observation schedule</li>
+<li>Observation notes or field notes</li><li>Feedback or evaluation forms</li><li>Consent forms (if applicable)</li>
+</ul>
+<p class="e">[Add links to your uploaded files here, such as a shared folder for your scanned forms and certificates.]</p>
+<div class="g2"><div class="ph" data-ph>Certificate</div><div class="ph" data-ph>Certificate</div></div>
+</section>
+
+<footer>
+<p>How this portfolio is graded:</p>
+<div class="rub"><span>Content completeness 25%</span><span>Organization and presentation 20%</span><span>Documentation and evidences 20%</span><span>Reflection and learning 20%</span><span>Professionalism and writing quality 15%</span></div>
+</footer>
+</div>
+<script>
+var S=["Introduction","Student Profile","Learning Goals","School Profile","Weekly Reflection","Activities","Growth Plan","Appendices"];
+var nav;
+function buildNav(){S.forEach(function(s,i){var b=document.createElement('button');b.textContent=(i+1)+'. '+s;b.onclick=function(){go(i)};nav.appendChild(b)})}
+function E(t){return '<div class="e">'+t+'</div>'}
+function F(l,t){return '<div class="f"><small>'+l+'</small>'+E(t)+'</div>'}
+function addWeek(){var w=document.getElementById('weeks'),n=w.children.length+1,d=document.createElement('details');
+d.innerHTML='<summary>Week '+n+'</summary><div>'+F('Week number and date','Week '+n+' · [dates]')+F('Learning objectives','[What did you want to learn this week?]')+F('Classroom observations (Field Study 1)','[What did you observe about teaching, learners, and classroom management?]')+F('Participation and assigned tasks (Field Study 2)','[What tasks did you do? Did you assist or teach?]')+F('Learning evidences','[Lesson plans, activity sheets, materials, or work samples]')+'<div class="g2"><div><div class="ph" data-ph>Photo</div>'+E('Caption: [describe the photo]')+'</div><div><div class="ph" data-ph>Photo</div>'+E('Caption: [describe the photo]')+'</div></div>'+F('Weekly reflection','[What happened, what did you learn, and what will you change next week?]')+'</div>';
+w.appendChild(d);if(n==1)d.open=true}
+function addAct(){var a=document.getElementById('acts'),d=document.createElement('details');
+d.innerHTML='<summary>Activity '+(a.children.length+1)+'</summary><div>'+F('Title of the activity','[Title]')+F('Date','[Date]')+F('Brief description','[What was the activity about?]')+F('Reflection','[What did you take away from it?]')+'<div class="ph" data-ph>Photo</div></div>';a.appendChild(d)}
+nav=document.getElementById('nav');nav.innerHTML='';buildNav();
+function go(i){var secs=document.querySelectorAll('#app>section');secs.forEach(function(s,k){s.classList.toggle('on',k===i)});
+Array.prototype.forEach.call(nav.children,function(b,k){b.classList.toggle('act',k===i)});
+var old=document.getElementById('pager');if(old)old.remove();var pg=document.createElement('div');pg.id='pager';pg.className='pager';
+var p=document.createElement('button');p.className='add';p.textContent=i>0?'Previous: '+S[i-1]:'';if(i>0)p.onclick=function(){go(i-1)};else p.style.visibility='hidden';
+var n=document.createElement('button');n.className='add';n.textContent=i<S.length-1?'Next: '+S[i+1]:'';if(i<S.length-1)n.onclick=function(){go(i+1)};else n.style.visibility='hidden';
+pg.appendChild(p);pg.appendChild(n);secs[i].appendChild(pg);window.scrollTo(0,0)}
+go(0);
+addWeek();addWeek();addWeek();addAct();
+</script>
+</body>
+</html>
